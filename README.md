@@ -30,11 +30,14 @@ If you need to start from scratch and remove the existing PWA:
 - In Chrome, go to localhost:3000, the app may or may not open again. If it does, open up the dev console, go to Application -> Service Workerss and click the **Unregister Worker** link.
 
 ## Screenshot
-
+![Demonstration of the finished Unit 19 Homework being used in the browser and then installed.](./screenshot.jpg)
 
 
 ## Repository at 
+https://github.com/petemaynard/PWA_Text_Editor
 
+## Deployed to Heroku at
+https://texteditor-pjm-666600f38464.herokuapp.com/
 
 
 Edited by Pete Maynard using code base provided by edX Boot Camp
