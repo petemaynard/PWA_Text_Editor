@@ -8,6 +8,11 @@ window.addEventListener('beforeinstallprompt', (event) => {
   butInstall.classList.toggle('hidden', false);
 });
 
+
+
+
+
+
 // This listener fires when the user clicks the "install" button.
 butInstall.addEventListener('click', async () => {
   const promptEvent = window.deferredPrompt;
@@ -19,10 +24,17 @@ butInstall.addEventListener('click', async () => {
   promptEvent.prompt();
 
   // TODO: Notice line 7 above.  window.deferredPrompt should now be set to null.
-
+  window.deferredPrompt = null;
   // TODO: Notice line 8 above. We want the same line here, but the hidden value should be set to true.
   // Insert line here
+  butInstall.classList.toggle('hidden', true);
 });
+
+
+
+
+
+
 
 window.addEventListener('appinstalled', (event) => {
   window.deferredPrompt = null;
